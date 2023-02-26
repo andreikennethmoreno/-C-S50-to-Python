@@ -1,5 +1,4 @@
 class TestDat:
-    
     def __init__(self, city, temp):
         self.item = city
         self.price = temp
@@ -8,14 +7,14 @@ if __name__ == '__main__':
  
     Menu = [TestDat("BURGER",9.5),
              TestDat("VEGAN BURGER",11.0),
-             TestDat("Chicago",85),
-             TestDat("Denver",90),
-             TestDat("Las Vegas",105),
-             TestDat("Los Angeles",82),
-             TestDat("Miami",97),
-             TestDat("New York",85),
-             TestDat("Pheonix",107),
-             TestDat("San Francisco",66),]
+             TestDat("HOTDOG",5.0),
+             TestDat("CHEESE DOG",7.0),
+             TestDat("FRIES",5.0),
+             TestDat("CHEESE FRIES",6.0),
+             TestDat("COLD PRESSED JUICE",7.0),
+             TestDat("COLD BREW",5.0),
+             TestDat("WATER",2.0),
+             TestDat("SODA",2.0),]
  
 print("Welcome to Beach Burger Shack!")
 print("Choose from the following menu to order. Press enter when done.")
@@ -35,7 +34,6 @@ while True :
             total += Menu[i].price
     #if no order stop loop
 
-
 #compares input through the array
-print(f"\nyour total is {total}")
+print(f"\nyour total is ${total}")
 
