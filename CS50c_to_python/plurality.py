@@ -9,7 +9,6 @@ class TestDat():
 TestArray = [] #empty array
 size = 9       #number of loops
 
-
 while True:
     for x in range(size):  # appending empty objects
         TestArray.append(TestDat())
@@ -25,7 +24,6 @@ while True:
     if(len(data) == 0):
         break
 
-
 numvotes =0
 voters = int(input("number of voters: "))
 for i in range(voters):
@@ -34,8 +32,6 @@ for i in range(voters):
         if (name == TestArray[j].Dat1):
             TestArray[j].Dat2 += 1
 
-
 maxv = max(TestArray, key=lambda x: x.Dat2)
 
-
-print(f"teh winner is {maxv} votes in total")
+print(f"the winner is {maxv} votes in total")
